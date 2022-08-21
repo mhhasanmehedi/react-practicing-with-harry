@@ -90,33 +90,59 @@ const TextForm = ({ heading, mode, showAlert }) => {
           ></textarea>
         </div>
         <button
+          disabled={text.length === 0}
           className="btn btn-info me-2 mb-2"
           onClick={() => handleUpClick()}
         >
           Convert to uppercase
         </button>
-        <button className="btn btn-info me-2 mb-2" onClick={handleLoClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-info me-2 mb-2"
+          onClick={handleLoClick}
+        >
           Convert to lowercase
         </button>
-        <button className="btn btn-info me-2 mb-2" onClick={handleTitleCase}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-info me-2 mb-2"
+          onClick={handleTitleCase}
+        >
           Title case
         </button>
-        <button className="btn btn-info me-2 mb-2" onClick={handleReverse}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-info me-2 mb-2"
+          onClick={handleReverse}
+        >
           Reverse case
         </button>
         <button
+          disabled={text.length === 0}
           className="btn btn-info me-2 mb-2"
           onClick={handleRemoveExtraSpace}
         >
           Remove Extra Space
         </button>
-        <button className="btn btn-info me-2 mb-2" onClick={downloadTxtFile}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-info me-2 mb-2"
+          onClick={downloadTxtFile}
+        >
           Download Text
         </button>
-        <button className="btn btn-info me-2 mb-2" onClick={handleCopy}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-info me-2 mb-2"
+          onClick={handleCopy}
+        >
           Copy Text
         </button>
-        <button className="btn btn-info" onClick={handleClearText}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-info"
+          onClick={handleClearText}
+        >
           Clear Text
         </button>
       </div>
@@ -133,7 +159,7 @@ const TextForm = ({ heading, mode, showAlert }) => {
         </p>
 
         <h2>Preview</h2>
-        <p>{text}</p>
+        <p>{text.length > 0 ? text : "Nothing to preview"}</p>
       </div>
     </div>
   );
