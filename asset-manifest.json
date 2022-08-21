@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-practicing-with-harry/static/css/main.abd64e84.css",
+    "main.js": "/react-practicing-with-harry/static/js/main.fb28e275.js",
+    "static/js/787.719ec76d.chunk.js": "/react-practicing-with-harry/static/js/787.719ec76d.chunk.js",
+    "index.html": "/react-practicing-with-harry/index.html",
+    "main.abd64e84.css.map": "/react-practicing-with-harry/static/css/main.abd64e84.css.map",
+    "main.fb28e275.js.map": "/react-practicing-with-harry/static/js/main.fb28e275.js.map",
+    "787.719ec76d.chunk.js.map": "/react-practicing-with-harry/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.fb28e275.js"
+  ]
+}
